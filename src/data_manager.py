@@ -36,6 +36,9 @@ def get_data_file_path():
             # Windows系统使用Documents/My Games/shoot目录
             documents_path = os.path.join(os.path.expanduser("~"), "Documents")
             data_dir = os.path.join(documents_path, "My Games", "shoot")
+        elif system == "Linux" and 'ANDROID_STORAGE' in os.environ:
+            # Android 使用外部存储
+            data_dir = os.path.join('/sdcard', '.shoot_data')
         else:
             # 其他系统使用用户主目录下的.shoot文件夹
             data_dir = os.path.join(os.path.expanduser("~"), ".shoot")
