@@ -2,7 +2,7 @@
 __pycache__/
 *.pyc
 *.pyo
-*.spec
+# *.spec  # 保留 buildozer.spec 用于 APK 构建
 *.egg-info/
 dist/
 build/
