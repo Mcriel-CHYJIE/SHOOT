@@ -6,6 +6,7 @@ package.name = shoot
 package.domain = org.shootgame
 
 # 版本
+version = 1.0.0
 source.dir = .
 source.include_exts = py,png,jpg,jpeg,gif,svg,wav,mp3,ogg,ttf,json,txt
 source.exclude_exts = spec
