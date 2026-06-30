@@ -2,7 +2,7 @@ name: Build SHOOT APK
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, mobile ]
   workflow_dispatch:  # 手动触发
 
 jobs:
